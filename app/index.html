@@ -8,13 +8,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     {{content-for 'head'}}
+    <script src="assets/webcomponentsjs/webcomponents.js"></script>
+    <link rel="import" href="assets/vulcanized.html">
 
     <link rel="stylesheet" href="assets/vendor.css">
     <link rel="stylesheet" href="assets/ember-cli-polymer.css">
 
     {{content-for 'head-footer'}}
   </head>
-  <body>
+  <body class="fullbleed layout vertical">
+
+  <!-- Works. -->
+  <paper-header-panel class="flex">
+    <paper-toolbar>
+      <paper-icon-button icon="menu" on-tap="menuAction"></paper-icon-button>
+      <div class="title">Polymer</div>
+    </paper-toolbar>
+  </paper-header-panel>
+
+
     {{content-for 'body'}}
 
     <script src="assets/vendor.js"></script>
