@@ -25,7 +25,7 @@ var inputTree = 'app';
 var options = {
   input: 'elements.html',
   output: 'assets/vulcanized.html',
-  excludes: [/^data:/, /^http[s]?:/, /^\//],
+  //excludes: [/^data:/, /^http[s]?:/, /^\//],
   abspath: '',
   stripExcludes: false,
   stripComments: false,
@@ -37,7 +37,7 @@ var options = {
 var polymer = pickFiles('bower_components/', {
   srcDir: '',
   files: [
-    'webcomponentsjs/webcomponents.js',
+    'webcomponentsjs/webcomponents-lite.js',
     // 'polymer/polymer.html'
 //  'polymer/polymer.js'
   ],
